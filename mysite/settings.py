@@ -26,7 +26,7 @@ SECRET_KEY = '7%$2_koquf=@7gvycyx1mnt4d!vf7lz2*x584e+pkmpbqne-+v'
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 '<your_username>.pythonanywhere.com']
+                 'sophiahw12.pythonanywhere.com']
 
 
 # Application definition
