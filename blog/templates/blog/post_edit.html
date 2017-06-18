@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+
+
+<!--  1. We have to display the form. We can do that with
+      (for example) a simple {{ form.as_p }}.
+      2. The line above needs to be wrapped with an HTML form tag:
+      <form method="POST">...</form>.
+      3. We need a Save button. We do that with an HTML button:
+       <button type="submit">Save</button>.
+      4. And finally, just after the opening <form ...>
+      tag we need to add {% csrf_token %}.
+      This is very important, since it makes your forms secure! -->
